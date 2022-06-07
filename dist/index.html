@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/style.min.css">
     
@@ -13,306 +13,444 @@
     <meta name="description" content="">
     
     <title>Home</title>
+  </head>
+  <body>
+    <div class="page" id="page">
+      <header class="header">
+  <div class="header__left">
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="./../index.html">Main</a>
+        </li>
 
-</head>
-<body>
+        <li class="nav__item">
+          <a class="nav__link has-subnav" href="">Articles</a>
 
-	<div class="page">
-		<header class="header">
-			<div class="header__left">
-				<nav class="nav">
-					<ul class="nav__list">
-						<li class="nav__item" >
-							<a class="nav__link" href="">Main</a>
-						</li>
-		
-						<li class="nav__item" >
-							<a class="nav__link has-subnav" href="">Articles</a>
-		
-							<ul class="subnav">
-								<li>
-									<a class="subnav__link" href="">Creating Sites</a>
-								</li>
-		
-								<li>
-									<a class="subnav__link" href="">Internet Marketing</a>
-								</li>
-		
-								<li>
-									<a class="subnav__link" href="">Developing Video</a>
-								</li>
-		
-							</ul>
-		
-						</li>
-		
-						<li class="nav__item" >
-							<a class="nav__link" href="">About me</a>
-						</li>
-		
-						<li class="nav__item" >
-							<a class="nav__link" href="">Advertisement</a>
-						</li>
-					</ul>
-				</nav>
-		
-			</div>
-		
-			<div class="header__right">
-			<nav class="nav">
-				<ul class="nav__list">
-					<li class="nav__item" >
-						<a class="nav__link" href="">Profile</a>
-					</li>
-				</ul>
-			</nav>	
-		
-			<form class="search" action="/" method="post">
-				<input class="search__input" type="text" placeholder="Search">
-			</form>
-			</div>
-		
-		</header>
+          <ul class="subnav">
+            <li>
+              <a class="subnav__link" href="">Creating Sites</a>
+            </li>
 
-			<aside class="sidebar">
-				<div class="sidebar__header">
-					<img src="../assets/images/sidebar.jpg" alt="">
-				
-				</div>
-		
-				<div class="sidebar__content">
-					<div class="profile">
-						<img class="profile__avatar" src="../assets/images/avatar.png" alt="">
-						<div class="profile__name">Name Surname</div>
-						<div class="profile__prof">Frontend Developer Blog</div>
-						<ul class="social">
-							<li class="social__item">
-								<a href="#" class="social__link" target="_blank">
-									<img src="../assets/images/social1.svg" alt="Name Surname Instagram">
-								</a>
-							</li>
-		
-							<li class="social__item">
-								<a href="#" class="social__link" target="_blank">
-									<img src="../assets/images/social2.svg" alt="Name Surname VK">
-								</a>
-							</li>
-		
-							<li class="social__item">
-								<a href="#" class="social__link" target="_blank">
-									<img src="../assets/images/social3.svg" alt="Name Surname Pinterest">
-								</a>
-							</li>
-						</ul>
-		
-						<div class="profile__text">
-							<p>Front end developer. Website development practice. 
-							I have been creating websites since 2012. Worked in several IT companies and has accumulated more than 10,000 hours in creating websites of varying complexity.</p>
-		
-						</div>
-		
-		
-					</div>
-		
-				</div>
-				<div class="sidebar__footer">
-					<a class="btn btn--red" href="">My works</a>
-					<button class="btn btn--blue" type="button">Write me</button>
-				</div>
-		
-			</aside>		
+            <li>
+              <a class="subnav__link" href="">Internet Marketing</a>
+            </li>
 
-		<main class="main">
-			<div class="container">
-	    
-	    <!-- Stories -->
-	    <div class="stories">
-	    	<div class="stories__item">
-	    		<img class="stories__preview" src="assets/images/Story1.png" alt="">
-	    		<div class="stories__title">Outdoor recreation</div>
-	    		<time class="stories__date" datetime="2020-09-21">21.09.2020</time>
-	    
-	    	</div>
-	    
-	    	<div class="stories__item">
-	    		<img class="stories__preview" src="assets/images/Story2.png" alt="">		
-	    		<div class="stories__title">I am finishing a difficult project</div>
-	    		<time class="stories__date" datetime="2020-08-22">22.08.2020</time>
-	    
-	    	</div>
-	    
-	    	<div class="stories__item">
-	    		<img class="stories__preview" src="assets/images/Story3.jpg" alt="">
-	    		<div class="stories__title">Moved to a new apartment</div>
-	    		<time class="stories__date" datetime="2020-07-23">23.07.2020</time>
-	    
-	    	</div>
-	    
-	    	<div class="stories__item">
-	    		<img class="stories__preview" src="assets/images/Story4.jpg" alt="">
-	    		<div class="stories__title">Autumn has come</div>
-	    		<time class="stories__date" datetime="2020-06-24">24.06.2020</time>
-	    
-	    	</div>
-	    
-	    </div>
-	    
-	    
-	    <!-- Admin Add Post -->
-	    <div class="add-post">
-	    	<form class="add-post__form" action="" method="post" >
-	    		<textarea class="add-post__textarea" name="post-text" placeholder="Write something" >		</textarea>
-	    		<div class="add-post__form-actions">
-	    			<label class="add-post__file" for="add-post-file">
-	    				<input type="file" id="add-post-file">
-	    
-	    			</label>
-	    			<button class="add-post__send" type="submit">
-	    				<img src="assets/images/add-post2.svg" alt="Send">
-	    
-	    			</button>
-	    		</div>
-	    
-	    	</form>
-	    
-	    </div>
-	    
-	    <!-- Short Post -->
-	    <div class="post">
-	    	<div class="post__content">
-	    		<p class="post__description">
-	    			Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Perspiciatis incidunt expedita tenetur praesentium odit magni labore, maxime iusto obcaecati saepe veritatis placeat. Saepe magnam, earum culpa nisi aliquam quae, pariatur.
-	    		</p>
-	    	</div>
-	    	<div class="post__footer">
-	    		<ul class="post__data">
-	    			<li class="post__data-item">
-	    				<time datetime="2022-04-30">30.04.2022</time>
-	    			</li>
-	    		</ul>
-	    	</div>
-	    
-	    </div>
-	    
-	    <!-- Post Coding -->
-	    <article class="post">
-	    	<div class="post__header post__header--preview">
-	    		<a href="#">
-	    		<img class="post__preview" src="assets/images/post_header.jpg" alt="How to write code easy and simple?">
-	    		</a>
-	    	</div>
-	    	<div class="post__content">
-	    		<h2 class="post__title">
-	    			<a href="#">How to write code easy and simple?</a>
-	    		</h2>
-	    		<p class="post__description">
-	    			Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Perspiciatis incidunt expedita tenetur praesentium odit magni labore, maxime iusto obcaecati saepe veritatis placeat. Saepe magnam, earum culpa nisi aliquam quae, pariatur.
-	    		</p>
-	    	</div>
-	    	<div class="post__footer">
-	    		<ul class="post__data">
-	    			<li class="post__data-item">
-	    				<time datetime="2022-04-30">30.04.2022</time>
-	    			</li>
-	    			<li class="post__data-item">
-	    				<a href="#">
-	    					Developing sites
-	    				</a>
-	    			</li>
-	    		</ul>
-	    		<a class="post__read" href="">Read more</a>
-	    
-	    	</div>
-	    
-	    </article>
-	    
-	    <!-- Post Notebook -->
-	    <article class="post">
-	    	<div class="post__header">
-	    		<div class="embed">
-	    			<iframe src="https://www.youtube.com/embed/AZrPpc1WH8g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	    		</div>
-	    	</div>
-	    	<div class="post__content">
-	    		<h2 class="post__title">
-	    			<a href="#">Bought new notebook for $1000</a>
-	    		</h2>
-	    	
-	    	</div>
-	    	<div class="post__footer">
-	    		<ul class="post__data">
-	    			<li class="post__data-item">
-	    				<time datetime="2022-04-30">30.04.2022</time>
-	    			</li>
-	    			<li class="post__data-item">
-	    				<a href="#">
-	    					Developing video
-	    				</a>
-	    			</li>
-	    		</ul>
-	    		<a class="post__read" href="">Comments</a>
-	    
-	    	</div>
-	    
-	    </article>
-	    
-	    <!-- Post Conference -->
-	    <article class="post">
-	    	<div class="post__header post__header--preview">
-	    		<a href="#">
-	    		<img class="post__preview" src="assets/images/post_header2.jpg" alt="How to write code easy and simple?">
-	    		</a>
-	    	</div>
-	    	<div class="post__content">
-	    		<h2 class="post__title">
-	    			<a href="#">How I went the Frontend Conf 2022</a>
-	    		</h2>
-	    		<p class="post__description">
-	    			Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Perspiciatis incidunt expedita tenetur praesentium odit magni labore, maxime iusto obcaecati saepe veritatis placeat. Saepe magnam, earum culpa nisi aliquam quae, pariatur.
-	    		</p>
-	    	</div>
-	    	<div class="post__footer">
-	    		<ul class="post__data">
-	    			<li class="post__data-item">
-	    				<time datetime="2022-04-30">30.04.2022</time>
-	    			</li>
-	    			<li class="post__data-item">
-	    				<a href="#">
-	    					Developing sites
-	    				</a>
-	    			</li>
-	    		</ul>
-	    		<a class="post__read" href="">Read more</a>
-	    
-	    	</div>
-	    
-	    </article>
-	    
-	    <!-- Pagination -->
-	    <ul class="pagination">
-	    	<li class="pagination__item">
-	    		<a class="pagination__link" href="#">&lt</a>
-	    	</li>
-	    	<li class="pagination__item">
-	    		<a class="pagination__link" href="#">1</a>
-	    	</li>
-	    	<li class="pagination__item">
-	    		<a class="pagination__link active" href="#">2</a>
-	    	</li>
-	    	<li class="pagination__item">
-	    		<a class="pagination__link" href="#">3</a>
-	    	</li>
-	    	<li class="pagination__item">
-	    		<a class="pagination__link" href="#">&gt</a>
-	    	</li>
-	    
-	    </ul>
-	    
-	    	</div>
+            <li>
+              <a class="subnav__link" href="">Developing Video</a>
+            </li>
+          </ul>
+        </li>
 
-		</main>
-	</div>
+        <li class="nav__item">
+          <a class="nav__link" href="text.html">About me</a>
+        </li>
+
+        <li class="nav__item">
+          <a class="nav__link" href="text.html">Advertisement</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button class="burger active" type="button" id="sidebarToggle">
+      <span>Open navigation</span>
+    </button>
+  </div>
+
+  <div class="header__right">
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="profile.html">Profile</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="signin.html">Sign In</a>
+        </li>
+      </ul>
+    </nav>
+
+    <form class="search" action="search.html" method="get">
+      <input class="search__input" type="text" placeholder="Search" />
+    </form>
+  </div>
+</header>
+ <aside class="sidebar" id="sidebar">
+  <div class="sidebar__header">
+    <img src="../assets/images/sidebar.jpg" alt="" />
+  </div>
+
+  <div class="sidebar__content">
+    <div class="profile">
+      <img class="profile__avatar" src="../assets/images/avatar.png" alt="" />
+      <div class="profile__header">
+        <div class="profile__name">Name Surname</div>
+        <div class="profile__prof">Frontend Developer Blog</div>
+      </div>
+
+      <ul class="social">
+        <li class="social__item">
+          <a href="#" class="social__link" target="_blank">
+            <img
+              src="../assets/images/social1.svg"
+              alt="Name Surname Instagram"
+            />
+          </a>
+        </li>
+
+        <li class="social__item">
+          <a href="#" class="social__link" target="_blank">
+            <img src="../assets/images/social2.svg" alt="Name Surname VK" />
+          </a>
+        </li>
+
+        <li class="social__item">
+          <a href="#" class="social__link" target="_blank">
+            <img
+              src="../assets/images/social3.svg"
+              alt="Name Surname Pinterest"
+            />
+          </a>
+        </li>
+      </ul>
+
+      <div class="profile__text">
+        <p>
+          Front end developer. Website development practice. I have been
+          creating websites since 2012. Worked in several IT companies and has
+          accumulated more than 10,000 hours in creating websites of varying
+          complexity.
+        </p>
+      </div>
+    </div>
+    <nav class="nav nav--mobile">
+      <ul class="nav__list nav__list--sidebar">
+        <li class="nav__item">
+          <a class="nav__link" href="./../index.html">Main</a>
+        </li>
+
+        <li class="nav__item">
+          <a class="nav__link has-subnav" href="">Articles</a>
+
+          <ul class="subnav">
+            <li>
+              <a class="subnav__link" href="">Creating Sites</a>
+            </li>
+
+            <li>
+              <a class="subnav__link" href="">Internet Marketing</a>
+            </li>
+
+            <li>
+              <a class="subnav__link" href="">Developing Video</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav__item">
+          <a class="nav__link" href="text.html">About me</a>
+        </li>
+
+        <li class="nav__item">
+          <a class="nav__link" href="text.html">Advertisement</a>
+        </li>
+
+        <li class="nav__item">
+          <a class="nav__link" href="profile.html">Profile</a>
+        </li>
+
+        <li class="nav__item">
+          <a class="nav__link" href="signin.html">Sign In</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="sidebar__footer">
+    <a class="btn btn--red" href="works.html">My works</a>
+    <button class="btn btn--blue" type="button" data-modal="contact-modal">
+      Write me
+    </button>
+  </div>
+</aside>
+
+
+      <main class="main">
+        <div class="container">
+<!-- Stories -->
+<div class="stories">
+  <div class="stories__item" data-modal="story-modal">
+    <img class="stories__preview" src="assets/images/Story1.png" alt="" />
+    <div class="stories__title">Outdoor recreation</div>
+    <time class="stories__date" datetime="2020-09-21">21.09.2020</time>
+  </div>
+
+  <div class="stories__item">
+    <img class="stories__preview" src="assets/images/Story2.png" alt="" />
+    <div class="stories__title">I am finishing a difficult project</div>
+    <time class="stories__date" datetime="2020-08-22">22.08.2020</time>
+  </div>
+
+  <div class="stories__item">
+    <img class="stories__preview" src="assets/images/Story3.jpg" alt="" />
+    <div class="stories__title">Moved to a new apartment</div>
+    <time class="stories__date" datetime="2020-07-23">23.07.2020</time>
+  </div>
+
+  <div class="stories__item">
+    <img class="stories__preview" src="assets/images/Story4.jpg" alt="" />
+    <div class="stories__title">Autumn has come</div>
+    <time class="stories__date" datetime="2020-06-24">24.06.2020</time>
+  </div>
+</div>
+
+<!-- Admin Add Post -->
+<div class="add-post">
+  <form class="add-post__form" action="" method="post">
+    <textarea
+      class="add-post__textarea"
+      name="post-text"
+      placeholder="Write something"
+      data-autoresize
+    >
+    </textarea>
+    <div class="add-post__form-actions">
+      <label class="add-post__file" for="add-post-file">
+        <input type="file" id="add-post-file" />
+      </label>
+      <button class="add-post__send" type="submit">Send</button>
+    </div>
+  </form>
+</div>
+
+<!-- Short Post -->
+<div class="post">
+  <div class="post__content">
+    <p class="post__description">
+      Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Perspiciatis
+      incidunt expedita tenetur praesentium odit magni labore, maxime iusto
+      obcaecati saepe veritatis placeat. Saepe magnam, earum culpa nisi aliquam
+      quae, pariatur.
+    </p>
+  </div>
+  <div class="post__footer">
+    <ul class="post__data">
+      <li class="post__data-item">
+        <time datetime="2022-04-30">30.04.2022</time>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Post Coding -->
+<article class="post">
+  <div class="post__header post__header--preview">
+    <a href="post.html">
+      <img
+        class="post__preview"
+        src="assets/images/post_header.jpg"
+        alt="How to write code easy and simple?"
+      />
+    </a>
+  </div>
+  <div class="post__content">
+    <h2 class="post__title">
+      <a href="post.html">How to write code easy and simple?</a>
+    </h2>
+    <p class="post__description">
+      Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Perspiciatis
+      incidunt expedita tenetur praesentium odit magni labore, maxime iusto
+      obcaecati saepe veritatis placeat. Saepe magnam, earum culpa nisi aliquam
+      quae, pariatur.
+    </p>
+  </div>
+  <div class="post__footer">
+    <ul class="post__data">
+      <li class="post__data-item">
+        <time datetime="2022-04-30">30.04.2022</time>
+      </li>
+      <li class="post__data-item">
+        <a href="#"> Developing sites </a>
+      </li>
+    </ul>
+    <a class="post__read" href="post.html">Read more</a>
+  </div>
+</article>
+
+<!-- Post Notebook -->
+<article class="post">
+  <div class="post__header">
+    <div class="embed">
+      <iframe
+        src="https://www.youtube.com/embed/AZrPpc1WH8g"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+  <div class="post__content">
+    <h2 class="post__title">
+      <a href="#">Bought new notebook for $1000</a>
+    </h2>
+  </div>
+  <div class="post__footer">
+    <ul class="post__data">
+      <li class="post__data-item">
+        <time datetime="2022-04-30">30.04.2022</time>
+      </li>
+      <li class="post__data-item">
+        <a href="#"> Developing video </a>
+      </li>
+    </ul>
+    <a class="post__read" href="">Comments</a>
+  </div>
+</article>
+
+<!-- Post Conference -->
+<article class="post">
+  <div class="post__header post__header--preview">
+    <a href="#">
+      <img
+        class="post__preview"
+        src="assets/images/post_header2.jpg"
+        alt="How to write code easy and simple?"
+      />
+    </a>
+  </div>
+  <div class="post__content">
+    <h2 class="post__title">
+      <a href="#">How I went the Frontend Conf 2022</a>
+    </h2>
+    <p class="post__description">
+      Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Perspiciatis
+      incidunt expedita tenetur praesentium odit magni labore, maxime iusto
+      obcaecati saepe veritatis placeat. Saepe magnam, earum culpa nisi aliquam
+      quae, pariatur.
+    </p>
+  </div>
+  <div class="post__footer">
+    <ul class="post__data">
+      <li class="post__data-item">
+        <time datetime="2022-04-30">30.04.2022</time>
+      </li>
+      <li class="post__data-item">
+        <a href="#"> Developing sites </a>
+      </li>
+    </ul>
+    <a class="post__read" href="">Read more</a>
+  </div>
+</article>
+
+<!-- Pagination -->
+<ul class="pagination">
+  <li class="pagination__item">
+    <a class="pagination__link" href="#">&lt</a>
+  </li>
+  <li class="pagination__item">
+    <a class="pagination__link" href="#">1</a>
+  </li>
+  <li class="pagination__item">
+    <a class="pagination__link active" href="#">2</a>
+  </li>
+  <li class="pagination__item">
+    <a class="pagination__link" href="#">3</a>
+  </li>
+  <li class="pagination__item">
+    <a class="pagination__link" href="#">&gt</a>
+  </li>
+</ul>
+
+</div>
+      </main>
+    </div>
+
+    <div class="modal" id="story-modal">
+  <div class="modal__content modal__content--story">
+    <video
+      class="modal__video"
+      src=""
+      poster="../assets/images/video poster.png"
+    ></video>
+  </div>
+</div>
+ <div class="modal" id="contact-modal">
+  <div class="modal__content">
+    <form class="form" action="/" method="post">
+      <div class="form__group form__group--md">
+        <input
+          class="form__control"
+          type="text"
+          placeholder="Your name"
+          value="Name Surname"
+        />
+        <span class="form__line"></span>
+      </div>
+
+      <div class="form__group form__group--md">
+        <input class="form__control" type="email" placeholder="Your e-mail" />
+        <span class="form__line"></span>
+      </div>
+
+      <div class="form__group form__group--md">
+        <textarea
+          class="form__control form__control--textarea"
+          placeholder="Enter text"
+        ></textarea>
+        <span class="form__line"></span>
+      </div>
+      <div class="form__footer">
+        <div class="form__group form__group--md">
+          <button class="btn btn--blue btn--rounded btn--sm" type="submit">
+            Send
+          </button>
+        </div>
+      </div>
+    </form>
+    <button class="modal__close" type="button">
+      <img src="../assets/images/close.svg" alt="close" />
+    </button>
+
+    <ul class="modal__footer">
+      <li>e-mail: <a href="mailto:info@mail.com">info@mail.com</a></li>
+      tel:
+      <li>tel:<a href="tel:+380959595959">+38(095)-959-59-59</a></li>
+    </ul>
+  </div>
+</div>
+ <div class="modal">
+  <div class="modal__content modal__content--contact">
+    <button class="modal__close" type="button">
+      <img src="../assets/images/close.svg" alt="close" />
+    </button>
+    <ul class="social">
+      <li class="social__item">
+        <a href="#" class="social__link">
+          <img src="../assets/images/share1.svg" alt="" />
+        </a>
+      </li>
+
+      <li class="social__item">
+        <a href="#" class="social__link">
+          <img src="../assets/images/share2.svg" alt="" />
+        </a>
+      </li>
+
+      <li class="social__item">
+        <a href="#" class="social__link">
+          <img src="../assets/images/share3.svg" alt="" />
+        </a>
+      </li>
+
+      <li class="social__item">
+        <a href="#" class="social__link">
+          <img src="../assets/images/share4.svg" alt="" />
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
 
     <script src="assets/js/app.js"></script>
-</body>
+  </body>
 </html>

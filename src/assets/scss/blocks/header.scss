@@ -1,24 +1,36 @@
 .header {
-	display: flex;
-	width: calc(100% - 300px);
-	background-color: $black;
-	box-shadow: 0 5px 22px rgba(0, 0, 0, .25);
-	position: fixed;
-	top: 0;
-	right: 0;
-	z-index: 1000;
+  display: flex;
+  width: calc(100% - 300px);
+  background-color: $black;
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
 
+  @include breakpoint($tablet-bp) {
+    width: 100%;
+  }
 
+  @include breakpoint($mobile-bp) {
+    display: none;
+  }
 }
 
 .header__left {
-	width: 60%;
+  width: 60%;
 
+  @include breakpoint($tablet-bp) {
+    width: 40%;
+  }
 }
 
 .header__right {
-	display: flex;
-	justify-content: flex-end;
-	width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
 
+  @include breakpoint($tablet-bp) {
+    width: 60%;
+  }
 }

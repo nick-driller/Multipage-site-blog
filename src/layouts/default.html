@@ -1,25 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     {{> head }}
+  </head>
+  <body>
+    <div class="page" id="page">
+      {{> header }} {{> sidebar }}
 
-</head>
-<body>
+      <main class="main">
+        <div class="container">{{> body }}</div>
+      </main>
+    </div>
 
-	<div class="page">
-		{{> header }}
-
-		{{> sidebar }}
-		
-
-		<main class="main">
-			<div class="container">
-	    {{> body }}
-	    	</div>
-
-		</main>
-	</div>
+    {{> story-modal }} {{> contact-modal }} {{> share-modal }}
 
     <script src="assets/js/app.js"></script>
-</body>
+  </body>
 </html>

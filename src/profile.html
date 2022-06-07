@@ -1,0 +1,61 @@
+---
+layout: default
+title: Profile
+---
+
+<h1 class="page__title">Profile</h1>
+
+<form class="form" action="/" method="post">
+  <div class="cabinet">
+    <div class="cabinet__form">
+      <div class="form__group form__group--md">
+        <input
+          class="form__control"
+          type="text"
+          placeholder="Your name"
+          value="Name Surname"
+        />
+        <span class="form__line"></span>
+      </div>
+
+      <div class="form__group form__group--md">
+        <input
+          class="form__control"
+          type="email"
+          placeholder="Your e-mail"
+          value="namesurname@mail.com"
+        />
+        <span class="form__line"></span>
+      </div>
+
+      <div class="form__group form__group--md">
+        <input
+          class="form__control"
+          type="password"
+          placeholder="New password"
+        />
+        <span class="form__line"></span>
+      </div>
+
+      <div class="form__group form__group--md">
+        <input
+          class="form__control"
+          type="password"
+          placeholder="Confirm password"
+        />
+        <span class="form__line"></span>
+      </div>
+    </div>
+    <div class="cabinet__avatar">
+      <img src="assets/images/profile_avatar.png" alt="" />
+      <label class="cabinet__file">
+        <input type="file" />
+        Choose avatar
+      </label>
+    </div>
+  </div>
+
+  <button class="btn btn--blue btn--rounded btn--sm" type="submit">
+    Confirm
+  </button>
+</form>

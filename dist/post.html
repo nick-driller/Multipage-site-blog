@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/style.min.css">
     
@@ -13,176 +13,414 @@
     <meta name="description" content="">
     
     <title>Post</title>
+  </head>
+  <body>
+    <div class="page" id="page">
+      <header class="header">
+  <div class="header__left">
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="./../index.html">Main</a>
+        </li>
 
-</head>
-<body>
+        <li class="nav__item">
+          <a class="nav__link has-subnav" href="">Articles</a>
 
-	<div class="page">
-		<header class="header">
-			<div class="header__left">
-				<nav class="nav">
-					<ul class="nav__list">
-						<li class="nav__item" >
-							<a class="nav__link" href="">Main</a>
-						</li>
-		
-						<li class="nav__item" >
-							<a class="nav__link has-subnav" href="">Articles</a>
-		
-							<ul class="subnav">
-								<li>
-									<a class="subnav__link" href="">Creating Sites</a>
-								</li>
-		
-								<li>
-									<a class="subnav__link" href="">Internet Marketing</a>
-								</li>
-		
-								<li>
-									<a class="subnav__link" href="">Developing Video</a>
-								</li>
-		
-							</ul>
-		
-						</li>
-		
-						<li class="nav__item" >
-							<a class="nav__link" href="">About me</a>
-						</li>
-		
-						<li class="nav__item" >
-							<a class="nav__link" href="">Advertisement</a>
-						</li>
-					</ul>
-				</nav>
-		
-			</div>
-		
-			<div class="header__right">
-			<nav class="nav">
-				<ul class="nav__list">
-					<li class="nav__item" >
-						<a class="nav__link" href="">Profile</a>
-					</li>
-				</ul>
-			</nav>	
-		
-			<form class="search" action="/" method="post">
-				<input class="search__input" type="text" placeholder="Search">
-			</form>
-			</div>
-		
-		</header>
+          <ul class="subnav">
+            <li>
+              <a class="subnav__link" href="">Creating Sites</a>
+            </li>
 
-			<aside class="sidebar">
-				<div class="sidebar__header">
-					<img src="../assets/images/sidebar.jpg" alt="">
-				
-				</div>
-		
-				<div class="sidebar__content">
-					<div class="profile">
-						<img class="profile__avatar" src="../assets/images/avatar.png" alt="">
-						<div class="profile__name">Name Surname</div>
-						<div class="profile__prof">Frontend Developer Blog</div>
-						<ul class="social">
-							<li class="social__item">
-								<a href="#" class="social__link" target="_blank">
-									<img src="../assets/images/social1.svg" alt="Name Surname Instagram">
-								</a>
-							</li>
-		
-							<li class="social__item">
-								<a href="#" class="social__link" target="_blank">
-									<img src="../assets/images/social2.svg" alt="Name Surname VK">
-								</a>
-							</li>
-		
-							<li class="social__item">
-								<a href="#" class="social__link" target="_blank">
-									<img src="../assets/images/social3.svg" alt="Name Surname Pinterest">
-								</a>
-							</li>
-						</ul>
-		
-						<div class="profile__text">
-							<p>Front end developer. Website development practice. 
-							I have been creating websites since 2012. Worked in several IT companies and has accumulated more than 10,000 hours in creating websites of varying complexity.</p>
-		
-						</div>
-		
-		
-					</div>
-		
-				</div>
-				<div class="sidebar__footer">
-					<a class="btn btn--red" href="">My works</a>
-					<button class="btn btn--blue" type="button">Write me</button>
-				</div>
-		
-			</aside>		
+            <li>
+              <a class="subnav__link" href="">Internet Marketing</a>
+            </li>
 
-		<main class="main">
-			<div class="container">
-	    
-	    
-	    <!-- Post Conference -->
-	    <article class="post">
-	    	<div class="post__actions">
-	    		<a href="#">Back</a>
-	    		<a href="#">
-	    		Share<img class="post__actions-icon" src="assets/images/Share.svg" alt="">
-	    		</a>
-	    	</div>
-	    	<div class="post__header">
-	    		<h1 class="post__title post__title--mb0">
-	    			How I went to the Frontend Conf 2022
-	    		</h1>
-	    		<ul class="post__data">
-	    			<li class="post__data-item">
-	    				<time datetime="2022-04-30">30.04.2022</time>
-	    			</li>
-	    			<li class="post__data-item">
-	    				<a href="#">
-	    					Developing sites
-	    				</a>
-	    			</li>
-	    		</ul>
-	    	</div>
-	    	<div class="post__content">
-	    		<div class="post__text">
-	    			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit beatae repellat ducimus, inventore veritatis eaque modi est, nemo, fugiat voluptates rerum commodi unde neque dolore delectus omnis ipsa dolor! Odio! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis minus sequi odit totam, cupiditate minima quos at consequuntur ipsum, nulla mollitia qui neque, commodi repellendus autem praesentium ducimus ut dicta.</p>
-	    			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda laborum cumque, voluptates. Alias modi reprehenderit, at enim blanditiis, amet ut suscipit minima, eveniet quisquam saepe doloremque unde numquam iure cumque?</p>
-	    			<p>
-	    				<img src="assets/images/post_img.jpg" alt="">
-	    			</p>
-	    			<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Tempora ad aliquid facilis nesciunt aperiam eum reprehenderit expedita voluptatem saepe, nihil culpa amet maxime, et odio voluptatum rerum quam recusandae illum? Lorem ipsum dolor sit amet consectetur adipisicing, elit. Maiores et voluptate odit dolorem aliquid ad aut laudantium quaerat officiis aperiam, aliquam ducimus id eaque explicabo fugit deleniti sequi! Omnis, porro?</p>
-	    
-	    		</div>
-	    		<div class="related">
-	    			<h3 class="related__title">
-	    				Related articles
-	    			</h3>
-	    
-	    			<ul>
-	    				<li>
-	    					
-	    				</li>
-	    				<li></li>
-	    				<li></li>
-	    				<li></li>
-	    			</ul>
-	    
-	    		</div>
-	    		
-	    	</div>
-	    
-	    </article>
-	    	</div>
+            <li>
+              <a class="subnav__link" href="">Developing Video</a>
+            </li>
+          </ul>
+        </li>
 
-		</main>
-	</div>
+        <li class="nav__item">
+          <a class="nav__link" href="text.html">About me</a>
+        </li>
+
+        <li class="nav__item">
+          <a class="nav__link" href="text.html">Advertisement</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button class="burger active" type="button" id="sidebarToggle">
+      <span>Open navigation</span>
+    </button>
+  </div>
+
+  <div class="header__right">
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="profile.html">Profile</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="signin.html">Sign In</a>
+        </li>
+      </ul>
+    </nav>
+
+    <form class="search" action="search.html" method="get">
+      <input class="search__input" type="text" placeholder="Search" />
+    </form>
+  </div>
+</header>
+ <aside class="sidebar" id="sidebar">
+  <div class="sidebar__header">
+    <img src="../assets/images/sidebar.jpg" alt="" />
+  </div>
+
+  <div class="sidebar__content">
+    <div class="profile">
+      <img class="profile__avatar" src="../assets/images/avatar.png" alt="" />
+      <div class="profile__header">
+        <div class="profile__name">Name Surname</div>
+        <div class="profile__prof">Frontend Developer Blog</div>
+      </div>
+
+      <ul class="social">
+        <li class="social__item">
+          <a href="#" class="social__link" target="_blank">
+            <img
+              src="../assets/images/social1.svg"
+              alt="Name Surname Instagram"
+            />
+          </a>
+        </li>
+
+        <li class="social__item">
+          <a href="#" class="social__link" target="_blank">
+            <img src="../assets/images/social2.svg" alt="Name Surname VK" />
+          </a>
+        </li>
+
+        <li class="social__item">
+          <a href="#" class="social__link" target="_blank">
+            <img
+              src="../assets/images/social3.svg"
+              alt="Name Surname Pinterest"
+            />
+          </a>
+        </li>
+      </ul>
+
+      <div class="profile__text">
+        <p>
+          Front end developer. Website development practice. I have been
+          creating websites since 2012. Worked in several IT companies and has
+          accumulated more than 10,000 hours in creating websites of varying
+          complexity.
+        </p>
+      </div>
+    </div>
+    <nav class="nav nav--mobile">
+      <ul class="nav__list nav__list--sidebar">
+        <li class="nav__item">
+          <a class="nav__link" href="./../index.html">Main</a>
+        </li>
+
+        <li class="nav__item">
+          <a class="nav__link has-subnav" href="">Articles</a>
+
+          <ul class="subnav">
+            <li>
+              <a class="subnav__link" href="">Creating Sites</a>
+            </li>
+
+            <li>
+              <a class="subnav__link" href="">Internet Marketing</a>
+            </li>
+
+            <li>
+              <a class="subnav__link" href="">Developing Video</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav__item">
+          <a class="nav__link" href="text.html">About me</a>
+        </li>
+
+        <li class="nav__item">
+          <a class="nav__link" href="text.html">Advertisement</a>
+        </li>
+
+        <li class="nav__item">
+          <a class="nav__link" href="profile.html">Profile</a>
+        </li>
+
+        <li class="nav__item">
+          <a class="nav__link" href="signin.html">Sign In</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="sidebar__footer">
+    <a class="btn btn--red" href="works.html">My works</a>
+    <button class="btn btn--blue" type="button" data-modal="contact-modal">
+      Write me
+    </button>
+  </div>
+</aside>
+
+
+      <main class="main">
+        <div class="container">
+<!-- Post Conference -->
+<article class="post">
+  <div class="post__actions">
+    <a href="index.html">Back</a>
+    <a href="#">
+      Share<img
+        class="post__actions-icon"
+        src="assets/images/Share.svg"
+        alt=""
+      />
+    </a>
+  </div>
+  <div class="post__header">
+    <h1 class="post__title post__title--open">
+      How I went to the Frontend Conf 2022
+    </h1>
+    <ul class="post__data">
+      <li class="post__data-item">
+        <time datetime="2022-04-30">30.04.2022</time>
+      </li>
+      <li class="post__data-item">
+        <a href="#"> Developing sites </a>
+      </li>
+    </ul>
+  </div>
+  <div class="post__content">
+    <div class="post__text">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+        beatae repellat ducimus, inventore veritatis eaque modi est, nemo,
+        fugiat voluptates rerum commodi unde neque dolore delectus omnis ipsa
+        dolor! Odio! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Perferendis minus sequi odit totam, cupiditate minima quos at
+        consequuntur ipsum, nulla mollitia qui neque, commodi repellendus autem
+        praesentium ducimus ut dicta.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+        laborum cumque, voluptates. Alias modi reprehenderit, at enim
+        blanditiis, amet ut suscipit minima, eveniet quisquam saepe doloremque
+        unde numquam iure cumque?
+      </p>
+      <p>
+        <img src="assets/images/post_img.jpg" alt="" />
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing, elit. Tempora ad
+        aliquid facilis nesciunt aperiam eum reprehenderit expedita voluptatem
+        saepe, nihil culpa amet maxime, et odio voluptatum rerum quam recusandae
+        illum? Lorem ipsum dolor sit amet consectetur adipisicing, elit. Maiores
+        et voluptate odit dolorem aliquid ad aut laudantium quaerat officiis
+        aperiam, aliquam ducimus id eaque explicabo fugit deleniti sequi! Omnis,
+        porro?
+      </p>
+    </div>
+  </div>
+  <div class="related">
+    <h3 class="post__subtitle">Related articles</h3>
+
+    <ul class="related__list">
+      <li class="related__list-item">
+        <h4 class="related__list-title">
+          <a href="#">How I went to the Frontend Conferention 2021 </a>
+        </h4>
+        <time class="related__list-date" datetime="2022-05-02">02.05.2022</time>
+      </li>
+      <li class="related__list-item">
+        <h4 class="related__list-title">
+          <a href="#">How to write code easy and simple? </a>
+        </h4>
+        <time class="related__list-date" datetime="2022-04-30">30.04.2022</time>
+      </li>
+      <li class="related__list-item">
+        <h4 class="related__list-title">
+          <a href="#">Bought new notebook for $1000 </a>
+        </h4>
+        <time class="related__list-date" datetime="2022-04-30">30.04.2022</time>
+      </li>
+      <li class="related__list-item">
+        <h4 class="related__list-title">
+          <a href="#">How I went to the Frontend Conferention 2021 </a>
+        </h4>
+        <time class="related__list-date" datetime="2022-05-02">02.05.2022</time>
+      </li>
+    </ul>
+  </div>
+
+  <h3 class="post__subtitle">Comments</h3>
+
+  <form class="form" action="/" method="post">
+    <div class="form__group">
+      <textarea
+        class="form__control form__control--textarea"
+        name="comment-text"
+        placeholder="Write comment"
+        data-autoresize
+      ></textarea>
+      <span class="form__line"></span>
+    </div>
+    <button class="btn btn--blue btn--rounded btn--sm" type="submit">
+      Send
+    </button>
+  </form>
+
+  <ul class="comments">
+    <li class="comments__item">
+      <div class="comments__header">
+        <img
+          class="comments__avatar"
+          src="assets/images/comments__author1.png"
+          alt="Name Surname"
+        />
+        <div class="comments__author">
+          <div class="comments__name">Name Surname</div>
+          <time class="comments__pubdate" datetime="2022-05-02 14:05"
+            >2 days ago</time
+          >
+        </div>
+      </div>
+      <div class="comments__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio adipisci
+        inventore modi, aliquid quam commodi, quis quisquam soluta provident
+        dolores necessitatibus fugit illo velit aliquam libero voluptatibus
+        ipsam. Fugiat, molestias.
+      </div>
+      <button class="comments__reply" type="button">Answer</button>
+
+      <ul class="comments">
+        <li class="comments__item">
+          <div class="comments__header">
+            <img
+              class="comments__avatar"
+              src="assets/images/comments__author2.png"
+              alt="Name Surname"
+            />
+            <div class="comments__author">
+              <div class="comments__name">Volodymyr Surname</div>
+              <time class="comments__pubdate" datetime="2022-05-02 14:05"
+                >1 day ago</time
+              >
+            </div>
+          </div>
+          <div class="comments__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            adipisci inventore modi, aliquid quam commodi, quis quisquam soluta
+            provident dolores necessitatibus fugit illo velit aliquam libero
+            voluptatibus ipsam. Fugiat, molestias.
+          </div>
+          <button class="comments__reply" type="button">Answer</button>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</article>
+
+</div>
+      </main>
+    </div>
+
+    <div class="modal" id="story-modal">
+  <div class="modal__content modal__content--story">
+    <video
+      class="modal__video"
+      src=""
+      poster="../assets/images/video poster.png"
+    ></video>
+  </div>
+</div>
+ <div class="modal" id="contact-modal">
+  <div class="modal__content">
+    <form class="form" action="/" method="post">
+      <div class="form__group form__group--md">
+        <input
+          class="form__control"
+          type="text"
+          placeholder="Your name"
+          value="Name Surname"
+        />
+        <span class="form__line"></span>
+      </div>
+
+      <div class="form__group form__group--md">
+        <input class="form__control" type="email" placeholder="Your e-mail" />
+        <span class="form__line"></span>
+      </div>
+
+      <div class="form__group form__group--md">
+        <textarea
+          class="form__control form__control--textarea"
+          placeholder="Enter text"
+        ></textarea>
+        <span class="form__line"></span>
+      </div>
+      <div class="form__footer">
+        <div class="form__group form__group--md">
+          <button class="btn btn--blue btn--rounded btn--sm" type="submit">
+            Send
+          </button>
+        </div>
+      </div>
+    </form>
+    <button class="modal__close" type="button">
+      <img src="../assets/images/close.svg" alt="close" />
+    </button>
+
+    <ul class="modal__footer">
+      <li>e-mail: <a href="mailto:info@mail.com">info@mail.com</a></li>
+      tel:
+      <li>tel:<a href="tel:+380959595959">+38(095)-959-59-59</a></li>
+    </ul>
+  </div>
+</div>
+ <div class="modal">
+  <div class="modal__content modal__content--contact">
+    <button class="modal__close" type="button">
+      <img src="../assets/images/close.svg" alt="close" />
+    </button>
+    <ul class="social">
+      <li class="social__item">
+        <a href="#" class="social__link">
+          <img src="../assets/images/share1.svg" alt="" />
+        </a>
+      </li>
+
+      <li class="social__item">
+        <a href="#" class="social__link">
+          <img src="../assets/images/share2.svg" alt="" />
+        </a>
+      </li>
+
+      <li class="social__item">
+        <a href="#" class="social__link">
+          <img src="../assets/images/share3.svg" alt="" />
+        </a>
+      </li>
+
+      <li class="social__item">
+        <a href="#" class="social__link">
+          <img src="../assets/images/share4.svg" alt="" />
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
 
     <script src="assets/js/app.js"></script>
-</body>
+  </body>
 </html>

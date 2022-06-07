@@ -1,0 +1,44 @@
+<div class="modal" id="contact-modal">
+  <div class="modal__content">
+    <form class="form" action="/" method="post">
+      <div class="form__group form__group--md">
+        <input
+          class="form__control"
+          type="text"
+          placeholder="Your name"
+          value="Name Surname"
+        />
+        <span class="form__line"></span>
+      </div>
+
+      <div class="form__group form__group--md">
+        <input class="form__control" type="email" placeholder="Your e-mail" />
+        <span class="form__line"></span>
+      </div>
+
+      <div class="form__group form__group--md">
+        <textarea
+          class="form__control form__control--textarea"
+          placeholder="Enter text"
+        ></textarea>
+        <span class="form__line"></span>
+      </div>
+      <div class="form__footer">
+        <div class="form__group form__group--md">
+          <button class="btn btn--blue btn--rounded btn--sm" type="submit">
+            Send
+          </button>
+        </div>
+      </div>
+    </form>
+    <button class="modal__close" type="button">
+      <img src="../assets/images/close.svg" alt="close" />
+    </button>
+
+    <ul class="modal__footer">
+      <li>e-mail: <a href="mailto:info@mail.com">info@mail.com</a></li>
+      tel:
+      <li>tel:<a href="tel:+380959595959">+38(095)-959-59-59</a></li>
+    </ul>
+  </div>
+</div>
